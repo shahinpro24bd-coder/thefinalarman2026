@@ -477,27 +477,22 @@
 
 .reel-card iframe {
     position: absolute;
-    top: -68px;
+    top: -122px;
     left: 0;
     width: 100%;
     height: calc(100% + 150px);
     display: block;
     border: 0;
     background: #fff;
-}
-
-@media (min-width: 768px) {
-    .reel-card iframe {
-        top: -122px;
-        transform: scale(1.75);
-        transform-origin: top center;
-    }
+    transform: scale(1.75);
+    transform-origin: top center;
 }
 
 @media (max-width: 575px) {
     .reel-card { height: 520px; }
     .reel-card iframe {
-        top: -68px;
+        top: -116px;
         height: calc(100% + 144px);
     }
 }
+
