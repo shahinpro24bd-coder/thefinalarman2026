@@ -477,13 +477,19 @@
 
 .reel-card iframe {
     position: absolute;
-    top: -122px;
+    top: -68px;
     left: 0;
     width: 100%;
     height: calc(100% + 150px);
     display: block;
     border: 0;
     background: #fff;
+}
+
+/* Crop the player chrome (header/footer of the source platform) at every
+   screen size so only the video itself is visible. */
+.reel-card:not(.review-card) iframe {
+    top: -122px;
     transform: scale(1.75);
     transform-origin: top center;
 }
@@ -491,8 +497,12 @@
 @media (max-width: 575px) {
     .reel-card { height: 520px; }
     .reel-card iframe {
-        top: -116px;
+        top: -68px;
         height: calc(100% + 144px);
     }
+    .reel-card:not(.review-card) iframe {
+        top: -116px;
+    }
 }
+
 
